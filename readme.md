@@ -1,3 +1,17 @@
+# About Face
+
+## Change Detector
+
+Examines a series of binary dumps to find bytes or words that follow a given sequence of changes.
+
+### Usage
+
+```
+python3 change_detector.py --bits 16 --endian little --sequence lgss FileName-*.dmp
+```
+
+Where `--sequence` is a series of `l`, `g`, `s`, or `d` to denote if a change between files is less-than, greater-than, the same, or different. There should be number-of-files minus 1 elements in the sequence.
+
 ## Decrement Detector
 
 Examines a series of binary dumps to find bytes or words that descend between each dump. This is useful for analyzing RAM dumps when reverse-engineering emulator ROMs (i.e. find the address in memory responsible for lives or health).
