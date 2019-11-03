@@ -1,5 +1,7 @@
 # About Face
 
+A set of tools for reverse-engineering binary memory dumps.
+
 ## Change Detector
 
 Examines a series of binary dumps to find bytes or words that follow a given sequence of changes.
